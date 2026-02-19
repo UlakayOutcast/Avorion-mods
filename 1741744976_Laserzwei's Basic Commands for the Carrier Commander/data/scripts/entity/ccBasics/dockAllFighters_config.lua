@@ -1,2 +1,0 @@
-local dockAll = {}
-return dockAll
