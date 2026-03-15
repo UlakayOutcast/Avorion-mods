@@ -1,0 +1,84 @@
+# ========== C:/Users/bphot/AppData/Roaming/Avorion/mods/UI lib/data/scripts/uiLib/settingsWindow.lua ==========
+#: C:/Users/bphot/AppData/Roaming/Avorion/mods/UI lib/data/scripts/uiLib/settingsWindow.lua:
+msgid "UI settings"
+msgstr "Настройки интерфейса"
+
+#: C:/Users/bphot/AppData/Roaming/Avorion/mods/UI lib/data/scripts/uiLib/settingsWindow.lua:
+msgid "Defaults"
+msgstr "По умолчанию"
+
+#: C:/Users/bphot/AppData/Roaming/Avorion/mods/UI lib/data/scripts/uiLib/settingsWindow.lua:
+msgid "Reset all settings to default values. Press 'Save' after this to confirm changes"
+msgstr "Сбросить настройки до изначальных значений. Нажмите после этого 'Сохранить', чтобы они применились"
+
+#: C:/Users/bphot/AppData/Roaming/Avorion/mods/UI lib/data/scripts/uiLib/settingsWindow.lua:
+msgid "Save changes by pressing this button or press ESC to undo them"
+msgstr "Сохраните изменения с помощью этой кнопки или нажмите ESC, чтобы их отменить"
+
+#: C:/Users/bphot/AppData/Roaming/Avorion/mods/UI lib/data/scripts/uiLib/settingsWindow.lua:
+msgid "Show top bar"
+msgstr "Показать верхнюю панель"
+
+#: C:/Users/bphot/AppData/Roaming/Avorion/mods/UI lib/data/scripts/uiLib/settingsWindow.lua:
+msgid "Toggle visibility of the top bar with info: docking status, free space in the cargo hold, money"
+msgstr "Переключает отображение верхней панели с информацией: статус стыковки, свободное место в трюме, деньги"
+
+#: C:/Users/bphot/AppData/Roaming/Avorion/mods/UI lib/data/scripts/uiLib/settingsWindow.lua:
+msgid "Always show backgrounds"
+msgstr "Всегда показывать фоны"
+
+#: C:/Users/bphot/AppData/Roaming/Avorion/mods/UI lib/data/scripts/uiLib/settingsWindow.lua:
+msgid "Show backgrounds even if you are far from the station or ship that you are interacting with"
+msgstr "Показывать фоны даже если вы далеко от станции или корабля, с которым идёт диалог"
+
+#: C:/Users/bphot/AppData/Roaming/Avorion/mods/UI lib/data/scripts/uiLib/settingsWindow.lua:
+msgid "Show resources"
+msgstr "Показывать ресурсы"
+
+#: C:/Users/bphot/AppData/Roaming/Avorion/mods/UI lib/data/scripts/uiLib/settingsWindow.lua:
+msgid "Toggle visibility of the resource panel at the top left corner. Breaks immersion, I recommend to turn this off"
+msgstr "Переключает отображение панели с ресурсами в левом верхнем углу. Портит погружение, рекомендую отключить"
+
+#: C:/Users/bphot/AppData/Roaming/Avorion/mods/UI lib/data/scripts/uiLib/settingsWindow.lua:
+msgid "Recommended value"
+msgstr "Рекомендованное значение"
+
+#: C:/Users/bphot/AppData/Roaming/Avorion/mods/UI lib/data/scripts/uiLib/settingsWindow.lua:
+msgid "Sounds"
+msgstr "Звуки"
+
+#: C:/Users/bphot/AppData/Roaming/Avorion/mods/UI lib/data/scripts/uiLib/settingsWindow.lua:
+msgid "VI"
+msgstr "ВИ"
+
+#: C:/Users/bphot/AppData/Roaming/Avorion/mods/UI lib/data/scripts/uiLib/settingsWindow.lua:
+msgid "Volume of your VI assistant. It comments your interaction with ships and stations (English voice only. If you have means to create a high-quality voiceover for other language, I will gladly include it into this mod, the 'Ui Lib')"
+msgstr "Громкость ВИ Ассистента, который комментирует взаимодействия с кораблями и станциями (Только на английском языке. Если у вас есть способ сделать качественную озвучку на другом языке, с радостью включу в данный мод, 'Ui Lib')"
+
+
+# ========== C:/Users/bphot/AppData/Roaming/Avorion/mods/UI lib/data/scripts/uiLib/uiBuilder.lua ==========
+#: C:/Users/bphot/AppData/Roaming/Avorion/mods/UI lib/data/scripts/uiLib/uiBuilder.lua:
+msgid "Docking status of your ship"
+msgstr "Статус стыковки вашего корабля"
+
+#: C:/Users/bphot/AppData/Roaming/Avorion/mods/UI lib/data/scripts/uiLib/uiBuilder.lua:
+msgid "Docked"
+msgstr "Корабль пристыкован"
+
+#: C:/Users/bphot/AppData/Roaming/Avorion/mods/UI lib/data/scripts/uiLib/uiBuilder.lua:
+msgid "Free cargo space in your current ship"
+msgstr "Свободное место в трюме вашего корабля"
+
+#: C:/Users/bphot/AppData/Roaming/Avorion/mods/UI lib/data/scripts/uiLib/uiBuilder.lua:
+msgid "Money"
+msgstr "Деньги"
+
+#: C:/Users/bphot/AppData/Roaming/Avorion/mods/UI lib/data/scripts/uiLib/uiBuilder.lua:
+msgid "Back "
+msgstr "Назад"
+
+#: C:/Users/bphot/AppData/Roaming/Avorion/mods/UI lib/data/scripts/uiLib/uiBuilder.lua:
+msgid "Leave "
+msgstr "Уйти"
+
+

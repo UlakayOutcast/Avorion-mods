@@ -1,0 +1,1 @@
+valueWeights[WeaponType.VaussCannon] = 0.75

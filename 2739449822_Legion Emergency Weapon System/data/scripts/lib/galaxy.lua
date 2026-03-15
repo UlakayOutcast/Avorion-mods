@@ -1,0 +1,1 @@
+weaponProbabilities[WeaponType.EmergencyWeapon] =            {d = 0.5, p = 0.4} --

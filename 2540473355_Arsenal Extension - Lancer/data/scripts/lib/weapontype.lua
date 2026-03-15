@@ -1,0 +1,1 @@
+WeaponTypes.addType("LancerLaser", "Lancer", armed)

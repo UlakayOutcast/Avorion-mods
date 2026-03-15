@@ -1,0 +1,1 @@
+WeaponTypes.addType("HelixCannon", "Helix Cannon", armed)

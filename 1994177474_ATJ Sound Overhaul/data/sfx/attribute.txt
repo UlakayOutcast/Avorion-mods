@@ -1,0 +1,49 @@
+
+ ---# no copyright / attribute: #---
+click.wav
+collisiondeep0.wav
+collisionmetal0.wav
+collisionmetal1.wav
+collisionmetal2.wav
+collisionstone0.wav
+
+collect0-5.wav
+error.wav
+place.wav
+
+ ---# JoelGerlach #---
+http://www.joelgerlach.com/
+http://www.freesound.org/people/Jace/
+
+engine.wav
+
+ ---# sarge4267 #---
+http://www.freesound.org/people/sarge4267/
+
+explosion0.wav
+explosion1.wav
+explosion2.wav
+explosion3.wav
+
+ ---# Jason Thomas D #---
+http://www.freesound.org/people/jasonthomasd/
+http://soundcloud.com/mustaphamonde
+https://soundcloud.com/the-nyquist-limit
+
+beams
+
+ ---# bubaproducer #---
+http://www.bubaproducer.com/
+http://www.freesound.org/people/bubaproducer/
+
+laser shots
+
+ ---# Ryan Conway #---
+http://www.freesound.org/people/ryanconway/
+
+projectile shots, explosions
+
+ ---# Kenney Vleugels #---
+www.kenney.nl
+
+collectspecial.wav

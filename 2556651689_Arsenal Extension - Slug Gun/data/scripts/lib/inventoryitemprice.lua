@@ -1,0 +1,1 @@
+valueWeights[WeaponType.SlugGun] = 0.9 --Hilariously bad unless you get in knife-fighting range.

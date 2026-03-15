@@ -1,0 +1,1 @@
+WeaponTypes.addType("SlugGun", "Slug Gun", armed)

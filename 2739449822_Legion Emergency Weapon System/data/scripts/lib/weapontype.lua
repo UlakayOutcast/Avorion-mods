@@ -1,0 +1,1 @@
+WeaponTypes.addType("EmergencyWeapon", "Emergency Weapon System", unarmed)

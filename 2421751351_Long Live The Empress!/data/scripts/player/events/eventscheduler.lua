@@ -1,0 +1,1 @@
+table.insert(events, {schedule = random():getInt(55, 75) * 60,   localEvent = true,  script = "events/spawncavaliersmerchant", to = 520})

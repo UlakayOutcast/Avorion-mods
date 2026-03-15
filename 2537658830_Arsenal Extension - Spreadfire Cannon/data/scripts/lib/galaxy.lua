@@ -1,0 +1,1 @@
+weaponProbabilities[WeaponType.SpreadFire] =            {d = 0.6, p = 2.0}

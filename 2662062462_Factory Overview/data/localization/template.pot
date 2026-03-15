@@ -1,0 +1,46 @@
+# ========== C:/Users/rober/AppData/Roaming/Avorion/mods/FactoryOverview/data/scripts/player/factory_overview_tab.lua ==========
+#: C:/Users/rober/AppData/Roaming/Avorion/mods/FactoryOverview/data/scripts/player/factory_overview_tab.lua:
+msgid "Factory Overview"
+msgstr ""
+
+#: C:/Users/rober/AppData/Roaming/Avorion/mods/FactoryOverview/data/scripts/player/factory_overview_tab.lua:
+msgid "Factory Overview"
+msgstr ""
+
+#: C:/Users/rober/AppData/Roaming/Avorion/mods/FactoryOverview/data/scripts/player/factory_overview_tab.lua:
+msgid "Income"
+msgstr ""
+
+#: C:/Users/rober/AppData/Roaming/Avorion/mods/FactoryOverview/data/scripts/player/factory_overview_tab.lua:
+msgid "Expense"
+msgstr ""
+
+#: C:/Users/rober/AppData/Roaming/Avorion/mods/FactoryOverview/data/scripts/player/factory_overview_tab.lua:
+msgid "Profit / h"
+msgstr ""
+
+#: C:/Users/rober/AppData/Roaming/Avorion/mods/FactoryOverview/data/scripts/player/factory_overview_tab.lua:
+msgid "Refresh Factory Data"
+msgstr ""
+
+#: C:/Users/rober/AppData/Roaming/Avorion/mods/FactoryOverview/data/scripts/player/factory_overview_tab.lua:
+msgid "Goto Selected"
+msgstr ""
+
+#: C:/Users/rober/AppData/Roaming/Avorion/mods/FactoryOverview/data/scripts/player/factory_overview_tab.lua:
+msgid "Jump to selected station"
+msgstr ""
+
+#: C:/Users/rober/AppData/Roaming/Avorion/mods/FactoryOverview/data/scripts/player/factory_overview_tab.lua:
+msgid "Sorting: "
+msgstr ""
+
+#: C:/Users/rober/AppData/Roaming/Avorion/mods/FactoryOverview/data/scripts/player/factory_overview_tab.lua:
+msgid "Sort by "
+msgstr ""
+
+#: C:/Users/rober/AppData/Roaming/Avorion/mods/FactoryOverview/data/scripts/player/factory_overview_tab.lua:
+msgid "N/A"
+msgstr ""
+
+

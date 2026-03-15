@@ -1,0 +1,1 @@
+weaponProbabilities[WeaponType.TMLauncher] = {d = 0.50 ,p = 0.3}

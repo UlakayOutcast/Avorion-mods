@@ -1,0 +1,1 @@
+valueWeights[WeaponType.FusionCannon] = 1.5 --Easier to hit with due to higher shot speed, and the lower ROF doesn't matter due to time taken to aim. Massive single shot damage.

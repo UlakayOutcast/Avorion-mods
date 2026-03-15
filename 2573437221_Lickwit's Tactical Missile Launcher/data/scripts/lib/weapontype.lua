@@ -1,0 +1,1 @@
+WeaponTypes.addType("TMLauncher", "TMLauncher /* Weapon Type */"%_t, armed)

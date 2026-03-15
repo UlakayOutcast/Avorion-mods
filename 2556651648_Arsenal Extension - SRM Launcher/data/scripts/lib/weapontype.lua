@@ -1,0 +1,1 @@
+WeaponTypes.addType("ShortRangeMissile", "Short Range Missile", armed)

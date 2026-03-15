@@ -1,0 +1,1 @@
+weaponProbabilities[WeaponType.HelixCannon] = {d = 0.5, p = 1.5}

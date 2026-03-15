@@ -1,0 +1,1 @@
+weaponProbabilities[WeaponType.SlugGun] =            {d = 0.6, p = 0.75} --Same distance but slightly more rare than a regular railgun

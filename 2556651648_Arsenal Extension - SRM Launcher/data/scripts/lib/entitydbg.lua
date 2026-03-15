@@ -1,0 +1,1 @@
+table.insert(WeaponTypes, {type = WeaponType.ShortRangeMissile, name = "SRM Launcher"})

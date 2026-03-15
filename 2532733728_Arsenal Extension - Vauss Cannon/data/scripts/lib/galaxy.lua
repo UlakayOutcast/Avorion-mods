@@ -1,0 +1,1 @@
+weaponProbabilities[WeaponType.VaussCannon] = {p = 0.5}

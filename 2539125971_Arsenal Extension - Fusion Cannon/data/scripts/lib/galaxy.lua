@@ -1,0 +1,1 @@
+weaponProbabilities[WeaponType.FusionCannon] =            {d = 0.4, p = 1.0}

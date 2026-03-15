@@ -1,0 +1,1 @@
+valueWeights[WeaponType.EmergencyWeapon] = 3 --Decently rare and fills up a utility slot many ships never use.

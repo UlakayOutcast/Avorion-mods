@@ -1,0 +1,1 @@
+valueWeights[WeaponType.SpreadFire] = 1

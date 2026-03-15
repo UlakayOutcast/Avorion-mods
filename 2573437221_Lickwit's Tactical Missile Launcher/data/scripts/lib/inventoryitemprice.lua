@@ -1,0 +1,1 @@
+valueWeights[WeaponType.TMLauncher] = 1.35

@@ -1,0 +1,1 @@
+WeaponTypes.addType("SpreadFire", "Spreadfire Cannon", armed)

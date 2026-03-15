@@ -1,0 +1,1 @@
+weaponProbabilities[WeaponType.ShortRangeMissile] =            {d = 0.75, p = 1.0}

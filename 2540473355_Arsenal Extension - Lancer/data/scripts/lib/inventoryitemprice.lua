@@ -1,0 +1,1 @@
+valueWeights[WeaponType.LancerLaser] = 1

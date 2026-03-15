@@ -1,0 +1,1 @@
+WeaponTypes.addType("FusionCannon", "Fusion Cannon", armed)

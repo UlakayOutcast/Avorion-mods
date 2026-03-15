@@ -1,0 +1,1 @@
+table.insert(WeaponTypes, {type = WeaponType.VaussCannon, name = "Vauss Cannon"})
