@@ -2,16 +2,13 @@ function getBonuses(seed, rarity, permanent)
     math.randomseed(seed)
 
     -- ### PERCENT BONUS ###
-    local perc = 0.08 -- base 8% 
-    perc = perc + (math.max(rarity.value, 0) * 0.1) -- 10% per rarity over petty (60% total)
-    perc = perc + math.random() * ((rarity.value +2) * 0.04) -- Random % between 0-32%, span increases by 4 per rarity
+    local perc = 0.04 + ((rarity.value + 1) * (rarity.value + 1) * 0.02) -- base + % per rarity (72% total)
+    perc = perc + math.random() * ((4 + (rarity.value + 1) * (rarity.value + 1)) * 0.006) -- Random % between 0-24%, span increases per rarity
     -- if permanent then perc = math.min(perc * 1.5, 0.9) end -- ensures % doesn't go over 90%
 
     -- ### FLAT BONUS ###
-    local flat = 40 -- base value
-    flat = flat + ((rarity.value*rarity.value + 1) * 20) -- add +0 (worst rarity) to +740 (best rarity)
-    flat = flat + (math.max(rarity.value * rarity.value, 0) * 20) -- add +0 (worst rarity) to +720 (best rarity)
-    flat = flat + math.random() * ((rarity.value * rarity.value / 2 +2) * 12) -- add random value between +15 (worst rarity) and +260 (best rarity)
+    local flat = 40 + ((rarity.value + 1) * (rarity.value + 1) * 20) -- base value 40 +20 (worst rarity) to +720 (best rarity)
+    flat = flat + math.random() * ((4 + (rarity.value + 1) * (rarity.value + 1)) * 6) -- add random value between +0 (worst rarity) and +240 (best rarity)
     flatB = round(flat)
     if not permanent then flat = 0 end -- обнуляем, если не permanent
     flat = round(flat)
@@ -20,7 +17,7 @@ function getBonuses(seed, rarity, permanent)
 end
 function getEnergy(seed, rarity, permanent)
     local perc, flat = getBonuses(seed, rarity, permanent)
-	return perc * 1.5 * 1000 * 1000 * 1000 + flat * 0.0045 * 1000 * 1000 * 1000
+	return perc * 2 * 1000 * 1000 * 1000 + flat * 0.002 * 1000 * 1000 * 1000
 end
 function getTooltipLines(seed, rarity, permanent)
 
