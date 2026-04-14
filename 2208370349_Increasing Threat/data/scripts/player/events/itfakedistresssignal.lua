@@ -55,11 +55,11 @@ function initialize(firstInitialization)
     if firstInitialization then
         local messages =
         {
-            "Mayday! Mayday! We are under attack by pirates! Our position is \\s(%1%:%2%), someone help, please!"%_t,
-            "Mayday! CHRRK ... under attack CHRRK ... pirates ... CHRRK ... position \\s(%1%:%2%) ... help!"%_t,
-            "Can anybody hear us? We have been ambushed by pirates! Our position is \\s(%1%:%2%) Help!"%_t,
-            "This is a distress call! Our position is \\s(%1%:%2%) We are under attack by pirates, please help!"%_t,
-            "Help! uh... I'm a rich trader and I'm being attacked by pirates at \\s(%1%:%2%) Help! Help! Reward! Reward!"%_t,
+            "Мэйдэй! Мэйдэй! На нас напали пираты! Наша позиция такова:\\s(%1%:%2%), кто-нибудь, помогите, пожалуйста!"%_t,
+			"Мэйдэй! ЧРРК... на нас напали, ЧРРК... пираты... ЧРРК... позиция \\s(%1%:%2%) ... помогите!"%_t,
+			"Кто-нибудь нас слышит? Мы попали в засаду пиратов! Наша позиция такова: \\s(%1%:%2%) Помогите!"%_t,
+			"Это сигнал бедствия! Наша позиция такова: \\s(%1%:%2%) На нас напали пираты, пожалуйста, помогите!"%_t,
+			"Помогите!.. Я богатый торговец, и на меня напали пираты в \\s(%1%:% 2%) Помогите! Помогите! Награда! Награда!"%_t,
         }
 
         player:sendChatMessage("Unknown"%_t, 0, messages[random():getInt(1, #messages)], target.x, target.y)

@@ -134,20 +134,20 @@ if onClient() then
         local descriptions = {}
 
         if trait == "vengeful" then
-            table.insert(descriptions, "Attacks hated factions more frequently") --pirateattack (hatred / notoriety) + decap strike => DONE
+            table.insert(descriptions, "Чаще нападает на ненавистные группировки") --pirateattack (hatred / notoriety) + decap strike => DONE
         elseif trait == "craven" then
-            table.insert(descriptions, "Attacks civilized sectors less often") --pirateattack + decap strike => DONE
+            table.insert(descriptions, "Реже атакует цивилизованные сектора") --pirateattack + decap strike => DONE
         elseif trait == "tempered" then
-            table.insert(descriptions, "Does not build hatred as quickly") --pirateattack / decapstrike / deepfakedistress => DONE
-            table.insert(descriptions, "Loses hatred more slowly over time") -- => DONE
-            table.insert(descriptions, "Cannot be bribed") --bribe => DONE
+            table.insert(descriptions, "Ненависть накапливается не так быстро") --pirateattack / decapstrike / deepfakedistress => DONE
+            table.insert(descriptions, "Со временем ненависть исчезает медленнее") -- => DONE
+            table.insert(descriptions, "Нельзя подкупить") --bribe => DONE
         elseif trait == "covetous" then
-            table.insert(descriptions, "Loses hatred more quickly over time") -- => DONE
-            table.insert(descriptions, "Easier to bribe") --bribe => DONE
+            table.insert(descriptions, "Со временем ненависть исчезает быстрее") -- => DONE
+            table.insert(descriptions, "Легче подкупить") --bribe => DONE
         elseif trait == "brutish" then
-            table.insert(descriptions, "Sends more ships when attacking") --pirateattack + decap strike => DONE
+            table.insert(descriptions, "Посылает больше кораблей при атаке") --pirateattack + decap strike => DONE
         elseif trait == "wily" then
-            table.insert(descriptions, "Sends specialized ships when attacking") --pirateattack + decap strike => DONE
+            table.insert(descriptions, "Посылает специализированные корабли при атаке") --pirateattack + decap strike => DONE
         end
 
         return descriptions

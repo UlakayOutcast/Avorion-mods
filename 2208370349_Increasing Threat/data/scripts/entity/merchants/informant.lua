@@ -120,7 +120,7 @@ function Informant.initUI()
     local iconSize = vec2(100, 100)
     icon.rect = Rect(center - iconSize, center + iconSize)
 
-    local label = window:createLabel(lister:nextRect(50), "Informants will infiltrate nearby pirate factions and give you any information they find about you."%_t, 14)
+    local label = window:createLabel(lister:nextRect(50), "Информаторы проникнут в близлежащие пиратские группировки и предоставят вам любую информацию о вас, которую они найдут."%_t, 14)
     label.wordBreak = true
 
     Informant.uiInitialized = true
@@ -149,7 +149,7 @@ function Informant.refreshUI()
     Informant.targetLabel.caption = "Target faction: ${name}"%_t % {name = factionName}
     if Informant.timeSince == nil or Informant.timeSince == 0 then
         --print("have not infiltrated")
-        Informant.remainingTimeLabel.caption = "You have not infiltrated this pirate faction."%_t
+        Informant.remainingTimeLabel.caption = "Вы не проникли в эту пиратскую фракцию."%_t
     else
         local since, tbl = createDigitalTimeString(Informant.timeSince)
         local timeUnit = "Seconds"%_t
@@ -159,7 +159,7 @@ function Informant.refreshUI()
             timeUnit = "Minutes"%_t
         end
 
-        Informant.remainingTimeLabel.caption = "Infiltrated this pirate faction ${since} ${unit} ago"%_t % {since = since, unit = timeUnit}
+        Informant.remainingTimeLabel.caption = "Проник в эту пиратскую фракцию ${since} ${unit} назад."%_t % {since = since, unit = timeUnit}
     end
 end
 
@@ -194,7 +194,7 @@ function Informant.hireInformant(shipIndex)
 
     local targetPirates = Faction(Informant.targetFaction)
     if not targetPirates then
-        player:sendChatMessage(station.title, ChatMessageType.Normal, "Sorry, we can't offer our services at the moment."%_T)
+        player:sendChatMessage(station.title, ChatMessageType.Normal, "К сожалению, в данный момент мы не можем предоставлять наши услуги."%_T)
         return
     end
 
@@ -209,7 +209,7 @@ function Informant.hireInformant(shipIndex)
     end
 
     receiveTransactionTax(station, tax)
-    shipFaction:pay("Paid %1% Credits to hire an informant"%_T, price)
+    shipFaction:pay("Выплачено %1% кредитов за наем информатора."%_T, price)
 
     --Set timestamp (for "hired since")
     local key = "informant_timestamp_" .. tostring(Informant.targetFaction)

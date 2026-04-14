@@ -27,28 +27,28 @@ local participants = {}
 
 --Some consts.
 local decap_taunts = {
-    "Target verified. Commencing hostilities.",
-    "At the end of the broken path lies death, and death alone.",
-    "There's nowhere left for you to run.",
-    "Endless is the path that leads you from hell.",
-    "Honed is the blade that severs the villain's head.",
-    "This is the end for you.",
-    "This is the end of the road for you. I think you understand why.",
-    "You think it's your right to choose who lives and dies?",
-    "Time to cut the head from the beast.",
-    "There's nowhere to run!",
-    "You die here!",
-    "We'll decorate this sector with your strewn corpses!",
-    "Go down, you murderer!",
-    "An eye for an eye!"
+    "Цель проверена. Начинаем военные действия",
+	"В конце проторенного пути лежит смерть, и только смерть",
+	"Тебе некуда бежать.",
+	"Бесконечен путь, который выведет тебя из ада.",
+	"Отточено лезвие, которое отрубит голову злодею.",
+	"Это конец для тебя.",
+	"Это конец пути для тебя. Я думаю, вы понимаете почему.",
+	"Вы считаете, что у вас есть право выбирать, кому жить, а кому умереть?",
+	"Время отрубить голову чудовищу.",
+	"Бежать некуда!",
+	"Вы умрете здесь!",
+	"Мы украсим этот сектор твоими трупами!",
+	"Падай, убийца!",
+    "Око за око!"
 }
 local exit_taunts = {
-    "This is not war anymore.",
-    "You are not our adversary.",
-    "Do not mistake this for mercy.",
-    "We leave you to rot in your pathetic existence.",
-    "Someday, we'll kill you too. But not here. Not today.",
-    "Enjoy your unearned reprieve."
+    "Это больше не война.",
+	"Вы нам не противник.",
+	"Не принимайте это за милосердие.",
+	"Мы оставляем вас гнить в вашем жалком существовании.",
+	"Когда-нибудь мы убьем и вас. Но не здесь. Не сегодня.",
+	"Наслаждайся своей незаслуженной отсрочкой."
 }
 
 -- Don't remove or alter the following comment, it tells the game the namespace this script lives in. If you remove it, the script will break.
@@ -310,7 +310,7 @@ if onServer() then
 
                 generator:endBatch()
 
-                local alertstring = string.format("%s is being targeted by a pirate attack"%_t, decapTargetPlayer.name)
+                local alertstring = string.format("%s стал объектом пиратской атаки"%_t, decapTargetPlayer.name)
                 _Sector:broadcastChatMessage("Server"%_t, 2, alertstring .. "!")
                 AlertAbsentPlayers(2, alertstring .. " in sector \\s(%1%:%2%)!"%_t, _Sector:getCoordinates())
             else

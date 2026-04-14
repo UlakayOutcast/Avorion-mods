@@ -111,7 +111,7 @@ function Briber.initUI()
     local iconSize = vec2(100, 100)
     icon.rect = Rect(center - iconSize, center + iconSize)
 
-    local label = window:createLabel(lister:nextRect(50), "Agents will infiltrate nearby pirate factions and bribe them to feel less hatred towards you."%_t, 14)
+    local label = window:createLabel(lister:nextRect(50), "Агенты будут проникать в близлежащие пиратские группировки и подкупать их, чтобы они меньше ненавидели вас."%_t, 14)
     label.wordBreak = true
 
     Briber.uiInitialized = true
@@ -137,7 +137,7 @@ function Briber.refreshUI()
     local factionName = "Unavailable"%_t
     if faction then factionName = faction.translatedName end
 
-    Briber.targetLabel.caption = "Target faction: ${name}"%_t % {name = factionName}
+    Briber.targetLabel.caption = "Целевая фракция: ${name}"%_t % {name = factionName}
 end
 
 function Briber.onShowWindow()
@@ -182,7 +182,7 @@ function Briber.hireBriber(shipIndex)
     end
 
     if not _CanOfferServices then
-        player:sendChatMessage(station.title, ChatMessageType.Normal, "Sorry, we can't offer our services at the moment."%_T)
+        player:sendChatMessage(station.title, ChatMessageType.Normal, "К сожалению, в данный момент мы не можем предоставлять наши услуги."%_T)
         return
     end
 
@@ -197,7 +197,7 @@ function Briber.hireBriber(shipIndex)
     end
 
     --No tax here.
-    shipFaction:pay("Paid %1% Credits to bribe pirates"%_T, price)
+    shipFaction:pay("Выплачено кредитов %1% для подкупа пиратов."%_T, price)
 
     --Set timestamp (for "hired since")
     local key = "informant_timestamp_" .. tostring(Briber.targetFaction)

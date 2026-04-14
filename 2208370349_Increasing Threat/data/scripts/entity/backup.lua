@@ -90,13 +90,13 @@ function Backup.onPirateBackupSpawned(_Generated)
     SpawnUtility.addITEnemyBuffs(_Generated, _WilyTrait, _Hatred)
 
     local _Taunts = {
-        "This is the end of the line for you!",
-        "We're going to kill you!",
-        "Hope you're ready to die.",
-        "You'll pay for what you did to our friends!",
-        "You killed our comrades! Now, we'll kill you!",
-        "You're dead! Your pathetic begging won't save you!",
-        "We'll tear you to pieces!"
+        "Для тебя это конец!",
+		"Мы собираемся убить тебя!",
+		"Надеюсь, ты готов умереть.",
+		"Ты заплатишь за то, что сделал с нашими друзьями!",
+        "Ты убил наших товарищей! Теперь мы убьем тебя!",
+		"Ты мертв! Твои жалкие мольбы тебя не спасут!",
+		"Мы разорвем тебя на куски!"
     }
     Sector():broadcastChatMessage(_Generated[1], ChatMessageType.Chatter, randomEntry(_Taunts))
 end

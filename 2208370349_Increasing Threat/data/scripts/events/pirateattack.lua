@@ -220,10 +220,10 @@ if onServer() then
 
         --Don't alert anyone of anything if there is a Jammer in play.
         if hasJammer == false then
-            sector:broadcastChatMessage("Server"%_t, 2, "Pirates are attacking the sector!"%_t)
-            AlertAbsentPlayers(2, "Pirates are attacking sector \\s(%1%:%2%)!"%_t, sector:getCoordinates())
+            sector:broadcastChatMessage("Server"%_t, 2, "Пираты атакуют сектор!"%_t)
+            AlertAbsentPlayers(2, "Пираты атакуют сектор \\s(%1%:%2%)!"%_t, sector:getCoordinates())
             if #pirate_reserves > 0 then
-                sector:broadcastChatMessage("Server"%_t, ChatMessageType.Information, "Additional subspace signals are showing up on your scanner."%_t)
+                sector:broadcastChatMessage("Server"%_t, ChatMessageType.Information, "На вашем сканере появляются дополнительные сигналы подпространства."%_t)
             end
         end
     end
@@ -429,19 +429,19 @@ if onClient() then
     function PirateAttack.onPiratesGenerated(id)
         -- these don't have translation markers on purpose
         local lines = {
-            "Eject all your cargo and we will spare you - hahaha just kidding. You're as good as dead.",
-            "We'll give you fired rounds for your cargo. Sounds like an equivalent exchange to me.",
-            "Kill 'em all, let their god sort them out!",
-            "Maybe next time, you'll pay our generous fee for protection.",
-            "Don't save any ammo! The salvage will pay for it.",
-            "Surrender or be destroyed!",
-            "Is this really worth our time? It doesn't matter, we'd be idiots to pass up on free loot.",
-            "Hah, they won't stand a chance.",
-            "Do you think this is a game?",
-            "HahahahAHAHAHAHAHA!",
-            "Looks like a soft target. Let's take them out quickly.",
-            "This is where the fun begins!",
-            "You'll be sucking vacuum in a moment!"
+            "Выбросывай весь свой груз, и мы пощадим тебя — ха-ха-ха, шучу. Ты все равно что мертв.",
+            "Мы дадим тебе обстрел за твой груз. Для меня это звучит как эквивалентный обмен.",
+            "Убейте их всех, пусть их бог разберется с ними!",
+            "Может быть, в следующий раз вы щедро заплатите нам за защиту.",
+            "Не экономьте боеприпасы! За это заплатят спасенные.",
+            "Сдавайтесь или будете уничтожены!",
+            "Действительно ли это стоит нашего времени? Это не имеет значения, мы были бы идиотами, если бы отказались от бесплатной добычи.",
+            "Ха, у них не будет ни единого шанса.",
+            "Ты думаешь, это игра?",
+            "ХахахахАХАХАХАХАХА!",
+            "Похоже, это легкая мишень. Давайте уберем их побыстрее.",
+            "Вот тут-то и начинается самое интересное!",
+            "Через мгновение ты высосан в вакуум!"
         }
     
         displaySpeechBubble(Entity(id), randomEntry(lines))
@@ -449,13 +449,13 @@ if onClient() then
 
     function PirateAttack.onHatredPiratesGenerated(id, hatedPlayerName)
         local lines = {
-            "This is the end of the line for you, %s!",
-            "We're going to kill you, %s!",
-            "Hope you're ready to die, %s.",
-            "There's %s! Die die die!",
-            "You'll pay for what you did to our friends!",
-            "You killed our comrades! Now, we'll kill you!",
-            "You're dead! Your pathetic begging won't save you!"
+            "Для тебя это конец очереди, %s!",
+            "Мы собираемся убить тебя, %с!",
+            "Надеюсь, ты готов умереть, %с.",
+            "Там %ы! Умри, умри, умри!",
+            "Ты заплатишь за то, что сделал с нашими друзьями!",
+            "Ты убил наших товарищей! Теперь мы убьем тебя!",
+            "Ты мертв! Твои жалкие мольбы тебя не спасут!"
         }
 
         displaySpeechBubble(Entity(id), string.format(randomEntry(lines), hatedPlayerName))
@@ -463,12 +463,12 @@ if onClient() then
 
     function PirateAttack.onNotorietyPiratesGenerated(id, notoriousPlayerName)
         local lines = {
-            "Look, it's %s! If we kill them, we'll be legends!",
-            "%s has a huge bounty! Take them out now!",
-            "%s doesn't look anything like the rumors! Vaporizing you is gonna make a great story back at the shipyard!",
-            "Well, well, well, it's %s! We'll bring your head to our boss and get a huge reward!",
-            "We're missing one last skull to decorate our ship. Yours will do nicely.",
-            "I've never understood why we have such a bad reputation with the likes of you out there."
+            "Смотрите, это же %s! Если мы убьем их, то станем легендами!",
+            "%s имеет огромную награду! Хватайте их прямо сейчас!",
+            "%s совсем не похож на слухи! Твое исчезновение станет отличной историей для верфи!",
+            "Так, так, так, это же %s! Мы принесем твою голову нашему боссу и получим огромную награду!",
+            "Нам не хватает последнего черепа, чтобы украсить наш корабль. Твой отлично подойдет.",
+            "Я никогда не понимал, почему у нас такая плохая репутация среди таких, как вы."
         }
 
         displaySpeechBubble(Entity(id), string.format(randomEntry(lines), notoriousPlayerName))

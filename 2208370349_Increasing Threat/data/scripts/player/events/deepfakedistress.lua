@@ -32,24 +32,24 @@ local hatredlevel = 0
 local _Debug = 0
 
 local ambush_taunts = {
-    "We've got you now! Hope you're ready to die!",
-    "Switch our IFF! Power up the turrets now! Fire! Fire! Fire!",
-    "You fool! You fell right into our trap.",
-    "Send out our coordinates! We're closing the jaws right now!",
-    "The target is here! Jump the fleet in NOW!"
+    "Теперь вы у нас в руках! Надеюсь, вы готовы умереть!",
+	"Поменяйте наш режим! Немедленно включите турели! Огонь! Огонь! Огонь!",
+	"Ты дурак! Вы попали прямо в нашу ловушку!",
+	"Пришлите наши координаты! Мы закрываем пасть прямо сейчас!",
+	"Цель здесь! Немедленно отправляйте флот в бой!"
 }
 local firstwave_taunts = {
-    "You'll pay for what you did to our friends!",
-    "You killed our comrades! Now, we'll kill you!",
-    "You're dead! Your pathetic begging won't save you!",
-    "Closing the jaws.",
-    "You won't make it out of this sector alive!"
+    "Ты заплатишь за то, что сделал с нашими друзьями!",
+	"Ты убил наших товарищей! Теперь мы убьем тебя!",
+	"Ты мертв! Твои жалкие мольбы тебя не спасут!",
+	"Закрой пасть!",
+	"Ты не выберешься из этого сектора живым!"
 }
 local playerran_taunts = {
-    "Haha, you ran with your tail between your legs.",
-    "Really, you're just going to run? We'll get you next time, coward.",
-    "Looks like the target escaped. One day, you won't be so lucky.",
-    "One day, your luck will run out. When that happens, we'll be waiting."
+    "Ха-ха, ты бежал, поджав хвост.",
+	"Ты правда собираешься просто сбежать? В следующий раз мы тебя достанем, трус.",
+	"Похоже, цель ускользнула. Когда-нибудь тебе так не повезет.",
+	"Когда-нибудь удача отвернется от тебя. Когда это произойдет, мы будем ждать."
 }
 
 if onServer() then
@@ -146,10 +146,10 @@ if onServer() then
         if firstInitialization then
             local messages =
             {
-                "Mayday! Mayday! We are under attack by pirates! Our position is \\s(%1%:%2%), someone help, please!"%_t,
-                "Mayday! CHRRK ... under attack CHRRK ... pirates ... CHRRK ... position \\s(%1%:%2%) ... help!"%_t,
-                "Can anybody hear us? We have been ambushed by pirates! Our position is \\s(%1%:%2%) Help!"%_t,
-                "This is a distress call! Our position is \\s(%1%:%2%) We are under attack by pirates, please help!"%_t,
+                "Мэйдэй! Мэйдэй! На нас напали пираты! Наша позиция такова:\\s(%1%:%2%), кто-нибудь, помогите, пожалуйста!"%_t,
+				"Мэйдэй! ЧРРК... на нас напали, ЧРРК... пираты... ЧРРК... позиция \\s(%1%:%2%) ... помогите!"%_t,
+				"Кто-нибудь нас слышит? Мы попали в засаду пиратов! Наша позиция такова: \\s(%1%:%2%) Помогите!"%_t,
+				"Это сигнал бедствия! Наша позиция такова: \\s(%1%:%2%) На нас напали пираты, пожалуйста, помогите!"%_t,
             }
 
             player:sendChatMessage("Unknown"%_t, 0, messages[random():getInt(1, #messages)], target.x, target.y)

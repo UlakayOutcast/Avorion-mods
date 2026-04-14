@@ -143,15 +143,15 @@ function spawnPirates(entry)
 
     if entry:getEntityType() == EntityType.Station then
         if _LargeAttack then
-            _Player:sendChatMessage(entry.name, ChatMessageType.Warning, "Your station in sector \\s(%1%:%2%) is being raided!"%_T, sector:getCoordinates())
+            _Player:sendChatMessage(entry.name, ChatMessageType.Warning, "На вашу станцию в секторе \\s (% 1%:%2%) совершен налет!"%_T, sector:getCoordinates())
         else
-            _Player:sendChatMessage(entry.name, ChatMessageType.Warning, "Your station in sector \\s(%1%:%2%) is under attack!"%_T, sector:getCoordinates())
+            _Player:sendChatMessage(entry.name, ChatMessageType.Warning, "Ваша станция в секторе \\s (% 1%:% 2%) атакована!"%_T, sector:getCoordinates())
         end
     else
         if _LargeAttack then
-            _Player:sendChatMessage(entry.name, ChatMessageType.Warning, "Your ship in sector \\s(%1%:%2%) is being overrun!"%_T, sector:getCoordinates())
+            _Player:sendChatMessage(entry.name, ChatMessageType.Warning, "Ваш корабль в секторе \\s (% 1%:% 2%) захвачен!"%_T, sector:getCoordinates())
         else
-            _Player:sendChatMessage(entry.name, ChatMessageType.Warning, "Your ship in sector \\s(%1%:%2%) is under attack!"%_T, sector:getCoordinates())
+            _Player:sendChatMessage(entry.name, ChatMessageType.Warning, "Ваш корабль в секторе \\s (% 1%:%2%) атакован!"%_T, sector:getCoordinates())
         end
     end
 end

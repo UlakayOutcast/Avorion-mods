@@ -44,21 +44,21 @@ if onServer() then
         local message
         local arguments = {}
 
-        local notorietyMsg = "They know of you, but you aren't a topic of conversation."
-        if notoriety > 40 then notorietyMsg = "There are whispers of your name in their shipyards." end
-        if notoriety > 80 then notorietyMsg = "There are mentions of your name in their shipyards." end
-        if notoriety > 120 then notorietyMsg = "You are a frequent topic of discussion in their shipyards." end
-        if notoriety > 160 then notorietyMsg = "Your name has a high reward attached to it, and is spoken of frequently." end
+        local notorietyMsg = "Они знают о тебе, но ты не являешься темой для разговоров."
+        if notoriety > 40 then notorietyMsg = "На их верфях шепотом произносят твое имя." end
+        if notoriety > 80 then notorietyMsg = "На их верфях есть упоминания вашего имени." end
+        if notoriety > 120 then notorietyMsg = "Ты - частая тема для обсуждения на их верфях." end
+        if notoriety > 160 then notorietyMsg = "С твоим именем связана высокая награда, и о нем часто говорят." end
 
-        local hatredMsg = "They are hostile to any civilization, but they don't feel strongly about you."
-        if hatred > 100 then hatredMsg = "You have angered them, but they aren't willing to devote resources to hunting you down." end
-        if hatred > 200 then hatredMsg = "They recognize your threat, and are actively making prepations to deal with you." end
-        if hatred > 400 then hatredMsg = "They are willing to devote some amount of ships to attacking you." end
-        if hatred > 600 then hatredMsg = "They are hostile towards you, and are willing to devote considerable resources to hunting you down." end
-        if hatred > 800 then hatredMsg = "They hate you, and will stop at nothing to kill you." end
-        if hatred > 1000 then hatredMsg = "Their hatred of you has consumed them, and they are willing to resort to increasingly extreme measures to see you dead." end
+        local hatredMsg = "Они враждебны к любой цивилизации, но не питают к тебе особых чувств."
+        if hatred > 100 then hatredMsg = "Ты разозлил их, но они не хотят тратить ресурсы на то, чтобы выслеживать тебя." end
+        if hatred > 200 then hatredMsg = "Они распознают твою угрозу и активно готовятся к тому, чтобы расправиться с тобой." end
+        if hatred > 400 then hatredMsg = "Они готовы выделить некоторое количество кораблей для нападения на тебя." end
+        if hatred > 600 then hatredMsg = "Они настроены по отношению к тебе враждебно и готовы потратить значительные ресурсы на то, чтобы выследить тебя." end
+        if hatred > 800 then hatredMsg = "Они ненавидят тебя и не остановятся ни перед чем, чтобы убить." end
+        if hatred > 1000 then hatredMsg = "Их поглотила ненависть к тебе, и они готовы прибегнуть ко все более крайним мерам, чтобы увидеть тебя мертвым." end
 
-        message = "To whom it may concern,\n\nWe have infiltrated '%1%'.\n%2%\n%3%\n\nRegards"%_T
+        message = "Для тех, кого это может касаться,\n\nмы внедрились в '%1%'.\n%2%\n%3%\n\nRegards"%_T
         arguments = {
             --            faction.unformattedName,
             faction.name,
@@ -67,21 +67,21 @@ if onServer() then
         }
 
         if hatred > 200 then
-            message = "To whom it may concern,\n\nWe have infiltrated '%1%'.\n%2%\n%3%\n%4%\n\nRegards"%_T
+            message = "К тем, кого это может касаться,\n\nмы проникли '%1%'.\n%2%\n%3%\n%4%\n\nRegards"%_T
             if _TimeUntilDecap > 0 then
-                table.insert(arguments, "These pirates may launch a decapitation strike against you! Their preparations will be finished in approximately " .. tostring(_HoursUntilDecap) .. " hours and " .. tostring(_ReportMinutesUntilDecap) .. " minutes." )
+                table.insert(arguments, "Эти пираты могут нанести вам сокрушительный удар! Их приготовления будут завершены примерно через " .. tostring(_HoursUntilDecap) .. " hours and " .. tostring(_ReportMinutesUntilDecap) .. " minutes." )
             else
-                table.insert(arguments, "These pirates may launch a decapitation strike against you! Their preparations are finished and an attack can be launched at any time." )
+                table.insert(arguments, "Эти пираты могут нанести вам сокрушительный удар! Они закончили подготовку и могут начать атаку в любой момент." )
             end
         end
 
         if hatred > 600 then
-            message = "To whom it may concern,\n\nWe have infiltrated '%1%'.\n%2%\n%3%\n%4%\n%5%\n\nRegards"%_T
-            table.insert(arguments, "If you have an energy suppression satellite running when these pirates attack, they may attempt to attack another location.")
+            message = "К тем, кого это может касаться,\n\nмы проникли '%1%'.\n%2%\n%3%\n%4%\n%5%\n\nRegards"%_T
+            table.insert(arguments, "Если у вас работает спутник энергетического подавления, то во время нападения этих пиратов они могут попытаться атаковать другое место.")
         end
 
         local mail = Mail()
-        mail.sender = "Hidden Sender"%_T
+        mail.sender = "Скрытый отправитель"%_T
         mail.receiver = player.id
         --    mail.header = Format("Surveillance Report of Faction '%1%'"%_T, faction.unformattedName)
         mail.header = Format("Infiltration Report, '%1%'"%_T, faction.name)
@@ -115,13 +115,14 @@ if onServer() then
         IncreasingThreatMails.Log(_MethodName, "Hatred value is " .. tostring(hatred) .. " new hatred value is " .. tostring(_NewHatred))
 
         local message = "To whom it may concern,\n\n'%1%' have %2%accepted your bribe. They will feel slightly more amicably towards in the immediate future.\n\nRegards"%_T
+        local message = "Для тех, кого это может касаться,\n\n'%1%' уже '%2%' приняли вашу взятку. В ближайшем будущем они будут относиться к вам немного дружелюбнее.\n\nRegards"%_T
         local arguments = {
             faction.name,
             _CovetousArg
         }
 
         local _Mail = Mail()
-        _Mail.sender = "Hidden Sender"%_T
+        _Mail.sender = "Скрытый отправитель"%_T
         _Mail.receiver = player.id
         _Mail.header = Format("Bribery Report, '%1%'"%_T, faction.name)
         _Mail.text = Format(message, unpack(arguments))
