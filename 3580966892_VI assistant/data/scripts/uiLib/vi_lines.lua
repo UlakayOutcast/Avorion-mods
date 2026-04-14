@@ -5,14 +5,14 @@ local lines_ = lines_list[id]
 lines_.announcement = {
 	save_loaded = 4.0,
 	docking = 2.0,
-	calculating_jump = 4.0,
+	calculating_jump = 3.7,
 	fresh_save = 21.0,
 	got_mail = 3.0,
 	system_add = 2.0,
 	system_remove = 2.0,
 	buildmode_change = 4.0,
 	enemy_defeated = 2.0,
-	changed_relations = 4.0,
+	changed_relations = 3.0,
 	changed_relations_level = 3.0,
 	new_material = 3.0,
 } 
@@ -21,7 +21,7 @@ lines_.warning = {
 	threat_detected = 4.0,
 	hostile_ships = 4.0,
 	ship_lost = 2.0,
-	threat_level = 2.0,
+	threat_level = 1.5,
 } 
 lines_.misc = {
 	extremely_high = 3.0,

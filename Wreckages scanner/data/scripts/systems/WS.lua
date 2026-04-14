@@ -224,7 +224,7 @@ if onClient() then
 			if not entityId then
 				if Player().craftIndex == Entity().index then
 					entityId = Entity().id
-					addShipProblem("SystemScanner", entityId, "Valuable systems detected on target!", "data/textures/icons/circuitry.png", ColorRGB(0, 1, 1))
+					addShipProblem("SystemScanner", entityId, "Ценные системы обнаружены на цели!", "data/textures/icons/circuitry.png", ColorRGB(0, 1, 1))
 				end
 			end
 		else

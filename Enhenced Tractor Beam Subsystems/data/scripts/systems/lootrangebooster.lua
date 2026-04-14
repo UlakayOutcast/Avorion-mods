@@ -44,9 +44,9 @@ function getIcon(seed, rarity)
 end
 
 function getEnergy(seed, rarity, permanent)
-    local range = getLootCollectionRange(seed, rarity)
+    local range = getLootCollectionRange(seed, rarity, permanent)
     -- return range * 20 * 1000 * 1000 / (1.1 ^ rarity.value)
-    return range * 10 * 1000 * 1000 / (1.1 ^ rarity.value)
+    return range * 5 * 1000 * 1000 / (1.1 ^ rarity.value)
 end
 
 function getPrice(seed, rarity)
