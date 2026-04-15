@@ -2,6 +2,7 @@
 -- Display a list of all wreckages in the sector, sorted by how big they are.
 -- Cool to add: benefits for Scavenger captains and particular subsystem upgrades
 -- (scanners?) to see more information, e.g. resource richness.
+local CaptainClass = include("captainclass")
 if onClient() then
 
 local swt_initialize_original = SectorShipOverview.initialize
@@ -94,7 +95,7 @@ local function getWreckageDetectorHighlightRange(ship)
 		local captain = ship:getCaptain()
 
 		-- Проверяем наличие капитана-шахтёра
-		if captain and captain:hasClass(CaptainUtility.ClassType.Scavenger) then
+		if captain and captain:hasClass(CaptainClass.Scavenger) then
 			highlightRange = 400 + captain.tier *300 + captain.level * 175
 		else
 			-- Проверяем наличие подсистемы

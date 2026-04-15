@@ -3,6 +3,7 @@ package.path = package.path .. ";data/scripts/lib/?.lua"
 include ("basesystem")
 include ("utility")
 include ("randomext")
+local CaptainClass = include("captainclass")
 
 -- Основные переменные
 materialLevel = 0
@@ -61,9 +62,12 @@ end
 
 local function getCaptainBonuses()
     local ship = Entity()
-    local captain = ship:getCaptain()
-    if captain and captain:hasClass(CaptainUtility.ClassType.Scavenger) then
-        return 400 + captain.tier * 300 + captain.level * 175, captain.tier + captain.level
+	if ship then 
+		local captain = ship:getCaptain()
+		-- if captain and (captain:hasClass(CaptainUtility.ClassType.Scavenger) or captain:hasClass(CaptainUtility.ClassType.LimitBreaker)) then
+		if captain and captain:hasClass(CaptainClass.Scavenger) then 
+			return 400 + captain.tier * 300 + captain.level * 175, captain.tier + captain.level
+		end
     end
     return 0, 0
 end

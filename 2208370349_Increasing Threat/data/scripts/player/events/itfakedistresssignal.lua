@@ -55,7 +55,7 @@ function initialize(firstInitialization)
     if firstInitialization then
         local messages =
         {
-            "Мэйдэй! Мэйдэй! На нас напали пираты! Наша позиция такова:\\s(%1%:%2%), кто-нибудь, помогите, пожалуйста!"%_t,
+            "Мэйдэй! Мэйдэй! На нас напали пираты! Наша позиция такова: \\s(%1%:%2%), кто-нибудь, помогите, пожалуйста!"%_t,
 			"Мэйдэй! ЧРРК... на нас напали, ЧРРК... пираты... ЧРРК... позиция \\s(%1%:%2%) ... помогите!"%_t,
 			"Кто-нибудь нас слышит? Мы попали в засаду пиратов! Наша позиция такова: \\s(%1%:%2%) Помогите!"%_t,
 			"Это сигнал бедствия! Наша позиция такова: \\s(%1%:%2%) На нас напали пираты, пожалуйста, помогите!"%_t,
@@ -63,7 +63,7 @@ function initialize(firstInitialization)
         }
 
         player:sendChatMessage("Unknown"%_t, 0, messages[random():getInt(1, #messages)], target.x, target.y)
-        player:sendChatMessage("", 3, "You have received a distress signal from an unknown source."%_t)
+        player:sendChatMessage("", 3, "Вы получили сигнал бедствия из неизвестного источника."%_t)
     end
 
 end
