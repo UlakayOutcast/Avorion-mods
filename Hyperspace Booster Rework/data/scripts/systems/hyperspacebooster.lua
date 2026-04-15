@@ -4,7 +4,6 @@ include ("basesystem")
 include ("utility")
 include ("randomext")
 
-																			  
 FixedEnergyRequirement = true
 
 function getBonuses(seed, rarity, permanent)
@@ -15,6 +14,15 @@ function getBonuses(seed, rarity, permanent)
     local efactor = 0
     local cdbias = 0
 
+	-- Редкость,Количество бонусов,Hyperspace Cooldown (cdfactor),Hyperspace Charge Energy (efactor),Hyperspace Reach (reach)
+	-- 0,1,-5% до -7%,-4% до -6%,1 (перманентно)
+	-- 1,1,-10% до -14%,-8% до -12%,1.5–2 (перманентно)
+	-- 2,2,-15% до -21%,-12% до -18%,3–4 (перманентно)
+	-- 3,2,-20% до -28%,-16% до -24%,4.5–6 (перманентно)
+	-- 4,2–3,-25% до -35%,-20% до -30%,6–8 (перманентно)
+	-- 5,2–3,-30% до -42%,-24% до -36%,7.5–10 (перманентно)
+	-- 6,3,-35% до -50% (до 75% при перманентной),-28% до -42%,9–12 (перманентно)
+	
     -- Корректируем редкость для расчёта количества бонусов
     local adjustedRarity = rarity.value + 1
 
@@ -88,13 +96,8 @@ function onInstalled(seed, rarity, permanent)
     addMultiplyableBias(StatsBonuses.HyperspaceReach, reach)
     addBaseMultiplier(StatsBonuses.HyperspaceCooldown, cooldown)
     addBaseMultiplier(StatsBonuses.HyperspaceChargeEnergy, energy)
-													   
-															
 end
 
-											   
-
-   
 
 function getName(seed, rarity)
     local reach, cooldown, energy, _, _ = getBonuses(seed, rarity, true)
@@ -114,12 +117,6 @@ function getName(seed, rarity)
     elseif energy ~= 0 then
         type = "Hyperspace Enhancer"%_t
     end
-
-					 
-					 
-							   
-	   
-
     return "${reach}${type} MK ${mark}"%_t % {reach = reachStr, type = type, mark = mark}
 end
 
@@ -198,11 +195,7 @@ function getComparableValues(seed, rarity)
         if reach ~= 0 then
             table.insert(values, {name = "Jump Range"%_t, key = "jump_range", value = round(reach * 100), comp = UpgradeComparison.MoreIsBetter})
         end
-
-						  
-																																				   
-		   
-
+	
         if cdfactor ~= 0 then
             table.insert(values, {name = "Hyperspace Cooldown"%_t, key = "hs_cooldown", value = round(cdfactor * 100), comp = UpgradeComparison.LessIsBetter})
         end
@@ -210,10 +203,6 @@ function getComparableValues(seed, rarity)
         if efactor ~= 0 then
             table.insert(values, {name = "Hyperspace Charge Energy"%_t, key = "recharge_energy", value = round(efactor * 100), comp = UpgradeComparison.LessIsBetter})
         end
-
-						   
-																																					
-		   
     end
 
     return base, bonus
