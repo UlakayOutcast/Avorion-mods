@@ -41,7 +41,8 @@ mission._Name = "Collect Pirate Bounty"
 --Standard mission data.
 mission.data.brief = mission._Name
 mission.data.title = mission._Name
-mission.data.autoTrackMission = truemission.data.description = {
+mission.data.autoTrackMission = true
+mission.data.description = {
     {text = "Вы получили следующий запрос от ${sectorName} ${giverTitle}:" }, --Placeholder
     {text = "..." },
     { text = "${killedTargets} / ${targets} целей уничтожено", bulletPoint = true, fulfilled = false },

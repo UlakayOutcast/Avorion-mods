@@ -2,7 +2,7 @@ package.path = package.path .. ";data/scripts/lib/?.lua"
 
 include("callable")
 
---Не удаляйте / не изменяйте, иначе скрипт может сломаться.
+--Don't remove / alter or else yo might break the script.
 --namespace Annihilatorium
 Annihilatorium = {}
 local self = Annihilatorium
@@ -78,7 +78,7 @@ function Annihilatorium.initUI()
     local buttonRect = nextWaveSplitter:partition(1)
     local button = nextWaveWindow:createButton(buttonRect, "Start", "onStartPressed")
 
-    nextWaveWindow.caption = "Начать следующую волну"
+    nextWaveWindow.caption = "Start Next Wave"
     nextWaveWindow.showCloseButton = 1
     nextWaveWindow.moveable = 1
 
@@ -100,15 +100,15 @@ function Annihilatorium.initUI()
         local motaDescriptionSplitter = UIArbitraryHorizontalSplitter(motaSplitter:partition(0), 10, 15, 40, 65, 90, 115, 140, 165, 190, 220)
 
         local labelTable = {
-            "Включить режим Master Of The Arena.",
-            "Это приведет к следующему:",
-            " - Нормальные враги x3 здоровья / урона",
-            " - Все боссы заменены Палачами",
-            " - Гарантированно, что все боссы будут Hardcore+",
-            " - Примерно 3:30 между волнами",
-            " - Выход из сектора приводит к поражению",
-            " - x3 награда за боссов / завершение всех волн",
-            "Удачи!"
+            "Включите режим "Мастер Арены".",
+			"Это приведет к следующему результату:",
+			" - У обычных врагов х3 л.с./ урон",
+			" - Все боссы заменены на палачей",
+			" - Все боссы гарантированно будут хардкорными +",
+			" - Примерно 3:30 между волнами",
+			" - Выход из сектора приводит к поражению",
+			" - 3-кратная награда боссам за прохождение всех волн",
+			"Удачи!"
         }
 
         for idx, txt in pairs(labelTable) do
@@ -238,7 +238,7 @@ function Annihilatorium.sendNextWave()
     if playerHasMissionScript then
         _sector:sendCallback("onAnnihilatoriumSpawnWave")
     else
-        _sector:broadcastMessage("", 3, "Вы победили все волны!")
+        _sector:broadcastMessage("", 3, "You've defeated all the waves!")
     end
 end
 callable(Annihilatorium, "sendNextWave")
@@ -288,9 +288,9 @@ function Annihilatorium.onToggleCleanWrecks()
         local d0 = {}
 
         if self.data.cleanWreckages then
-            d0.text = "Мы прекратим очистку обломков."
+            d0.text = "Мы перестанем убирать обломки."
         else
-            d0.text = "Мы начнем очистку обломков. Наслаждайтесь световым шоу!"
+            d0.text = "Мы начнем убирать обломки. Наслаждайтесь световым шоу!"
         end
 
         ScriptUI():showDialog(d0)
@@ -342,7 +342,7 @@ function Annihilatorium.onTogglePullLoot()
         local d0 = {}
 
         if self.data.pullLoot then
-            d0.text = "Мы прекратим собирать добычу."
+            d0.text = "Мы перестанем собирать добычу."
             self.deleteLootZoneLasers()
         else
             d0.text = "Мы начнем собирать добычу. Наслаждайтесь световым шоу!"

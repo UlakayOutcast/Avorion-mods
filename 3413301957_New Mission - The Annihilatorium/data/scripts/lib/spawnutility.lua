@@ -15,17 +15,17 @@ function SpawnUtility.addAnnihilatoriumMOTABossBuff(entity)
     local level = selectByWeight(random(), levels)
 
     if level == 1 then
-        titleName = "Хардкор "
+        titleName = "Hardcore "
 
         hpFactor = 3
         dmgFactor = 3
     elseif level == 2 then
-        titleName = "Свирепый "
+        titleName = "Ferocious "
 
         hpFactor = 5
         dmgFactor = 3
     elseif level == 3 then
-        titleName = "Совершенство "
+        titleName = "Paragon "
 
         hpFactor = 5
         dmgFactor = 4
