@@ -19,7 +19,6 @@ local function getMaxMineableMaterial()
         maxMaterialLevel = captain.tier + captain.level
 		maxRange = maxRange + captain.tier * 300 + captain.level * 150
 	else
-		maxRange = maxRange + captain.tier * 150 + captain.level * 87.5
 		captain = false
     end
 	-- Проверяем наличие подсистемы
