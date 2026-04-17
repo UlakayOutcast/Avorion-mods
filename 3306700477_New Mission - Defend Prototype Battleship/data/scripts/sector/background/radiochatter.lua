@@ -9,17 +9,17 @@ if onClient() then
         if self.GeneralShipChatter then
             --0x726164696F206368617474657220616C77617973205354415254
             --Defend Prototype radio chatter
-            table.insert(self.GeneralShipChatter, "The tech used to make those prototypes is tough, but they still can't stand up to Scorchers and Devastators.")
-            table.insert(self.GeneralShipChatter, "I've heard that once they're done building it, they basically tear down the whole sector. It's eerie.")
-            table.insert(self.GeneralShipChatter, "... she said you should target the Deadshots first. What's a Deadshot?")
-            table.insert(self.GeneralShipChatter, "For all the money they spend building those things and hiring mercs, you'd think they'd be better defended.")
-            table.insert(self.GeneralShipChatter, "My sister picked up a contract to defend a shipyard last week. She said the attack was ferocious but the pay was great!")
+            table.insert(self.GeneralShipChatter, "Технология, использованная для создания этих прототипов, сложна, но они все равно не могут противостоять Обжигателям и Опустошителям.")
+            table.insert(self.GeneralShipChatter, "Я слышал, что как только они его построят, они практически снесут весь сектор. Это жутко.")
+            table.insert(self.GeneralShipChatter, "... она сказала, что сначала тебе следует нацелиться на Deadshot. Что такое Deadshot?")
+            table.insert(self.GeneralShipChatter, "Несмотря на все деньги, которые они тратят на строительство этих вещей и найм наемников, можно подумать, что они будут лучше защищены.")
+            table.insert(self.GeneralShipChatter, "Моя сестра получила контракт на защиту верфи на прошлой неделе. Она сказала, что нападение было жестоким, но плата была огромной!")
             --0x726164696F206368617474657220616C7761797320454E44
 
             if random():test(0.25) then
                 --0x726164696F2063686174746572203235706374205354415254
                 --Defend Prototype radio chatter
-                table.insert(self.GeneralShipChatter, "Legit question for any captain. How would you deal with 30-50 angry pirates attacking a shipyard within 3-5 minutes?")
+                table.insert(self.GeneralShipChatter, "Законный вопрос для любого капитана. Как бы вы справились с 30-50 разгневанными пиратами, напавшими на верфь в течение 3-5 минут?")
                 --0x726164696F206368617474657220323570637420454E44
             end
         end
