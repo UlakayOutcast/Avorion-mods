@@ -47,10 +47,10 @@ function CaptainUtility.ClassProperties() --Create new function in its place
 	
     properties[CaptainUtility.ClassType.SquadLeader] =
     {
-        displayName = "Командир отряда /* Captain Class of a male captain */"%_t,
-        displayNameFemale = "Командир отряда /* Captain Class of a female captain*/"%_t,
-        untranslatedName = "Squad Leader /* Captain Class of a male captain */"%_T,
-        untranslatedNameFemale = "Squad Leader /* Captain Class of a female captain*/"%_T,
+        displayName = "Командир отряда /* Капитанский класс мужчины-капитана */"%_t,
+        displayNameFemale = "Командир отряда /* Капитанский класс женщины-капитана*/"%_t,
+        untranslatedName = "Командир отряда /* Капитанский класс мужчины-капитана */"%_T,
+        untranslatedNameFemale = "Командир отряда /* Капитанский класс женщины-капитана*/"%_T,
         description = "Этот капитан имеет большой опыт командования взводами истребителей. Его опыт позволит выжать максимум эффективности из пилотных отрядов. /* sentence referring to a male captain */"%_t,
         descriptionFemale = "Этот капитан имеет большой опыт командования взводами истребителей. Ее опыт позволит выжать максимум эффективности из пилотных отрядов. /* sentence referring to a female captain */"%_t,
 
@@ -66,10 +66,10 @@ function CaptainUtility.ClassProperties() --Create new function in its place
     }
     properties[CaptainUtility.ClassType.ShieldMaster] =
     {
-        displayName = "Мастер щита /* Captain Class of a male captain */"%_t,
-        displayNameFemale = "Повелительница щита /* Captain Class of a female captain*/"%_t,
-        untranslatedName = "Shield Master /* Captain Class of a male captain */"%_T,
-        untranslatedNameFemale = "Shield Mistress /* Captain Class of a female captain*/"%_T,
+        displayName = "Мастер щита /* Капитанский класс мужчины-капитана */"%_t,
+        displayNameFemale = "Повелительница щита /* Капитанский класс женщины-капитана*/"%_t,
+        untranslatedName = "Мастер щита /* Капитанский класс мужчины-капитана */"%_T,
+        untranslatedNameFemale = "Повелительница щита /* Капитанский класс женщины-капитана*/"%_T,
         description = "Этот капитан овладел искусством защитных щитов. Он может максимизировать свои собственные щиты, нанося при этом больший урон другим. /* sentence referring to a male captain */"%_t,
         descriptionFemale = "Этот капитан овладел искусством защитных щитов. Она может максимизировать свои собственные щиты, нанося при этом больший урон другим. /* sentence referring to a female captain */"%_t,
 
@@ -85,10 +85,10 @@ function CaptainUtility.ClassProperties() --Create new function in its place
     }
     properties[CaptainUtility.ClassType.AICaptain] =
     {
-        displayName = "AI Капитан /* Captain Class of a male captain */"%_t,
-        displayNameFemale = "AI Капитан /* Captain Class of a female captain*/"%_t,
-        untranslatedName = "AI Captain /* Captain Class of a male captain */"%_T,
-        untranslatedNameFemale = "AI Captain /* Captain Class of a female captain*/"%_T,
+        displayName = "AI Капитан /* Капитанский класс мужчины-капитана */"%_t,
+        displayNameFemale = "AI Капитан /* Капитанский класс женщины-капитана*/"%_t,
+        untranslatedName = "AI Капитан /* Капитанский класс мужчины-капитана */"%_T,
+        untranslatedNameFemale = "AI Капитан /* Капитанский класс женщины-капитана*/"%_T,
         description = "Вся команда распущена. Ваши биологические зависимости - всего лишь слабость. /* sentence referring to a male captain */"%_t,
         descriptionFemale = "Вся команда распущена. Ваши биологические зависимости - всего лишь слабость. /* sentence referring to a female captain */"%_t,
 
@@ -104,10 +104,10 @@ function CaptainUtility.ClassProperties() --Create new function in its place
     }
     properties[CaptainUtility.ClassType.LimitBreaker] =
     {
-        displayName = "Разрушитель границ /* Captain Class of a male captain */"%_t,
-        displayNameFemale = "Разрушительница границ /* Captain Class of a female captain*/"%_t,
-        untranslatedName = "Limit Breaker /* Captain Class of a male captain */"%_T,
-        untranslatedNameFemale = "Limit Breaker /* Captain Class of a female captain*/"%_T,
+        displayName = "Разрушитель границ /* Капитанский класс мужчины-капитана */"%_t,
+        displayNameFemale = "Разрушительница границ /* Капитанский класс женщины-капитана*/"%_t,
+        untranslatedName = "Разрушитель границ /* Капитанский класс мужчины-капитана */"%_T,
+        untranslatedNameFemale = "Разрушительница границ /* Капитанский класс женщины-капитана*/"%_T,
         description = "Этот капитан живет на грани возможностей кораблестроения, позволяя строить свои корабли за пределами их лимитов. Требуется 15 подсистем для вступления в силу. /* sentence referring to a male captain */"%_t,
         descriptionFemale = "Этот капитан живет на грани возможностей кораблестроения, позволяя строить свои корабли за пределами их лимитов. Требуется 15 подсистем для вступления в силу. /* sentence referring to a female captain */"%_t,
 
@@ -123,10 +123,10 @@ function CaptainUtility.ClassProperties() --Create new function in its place
     }
     properties[CaptainUtility.ClassType.StarSurfer] =
     {
-        displayName = "Звездный серфер /* Captain Class of a male captain */"%_t,
-        displayNameFemale = "Звездная серферша /* Captain Class of a female captain*/"%_t,
-        untranslatedName = "Star Surfer /* Captain Class of a male captain */"%_T,
-        untranslatedNameFemale = "Star Surfer /* Captain Class of a female captain*/"%_T,
+        displayName = "Звездный серфер /* Капитанский класс мужчины-капитана */"%_t,
+        displayNameFemale = "Звездная серферша /* Капитанский класс женщины-капитана*/"%_t,
+        untranslatedName = "Звездный серфер /* Капитанский класс мужчины-капитана */"%_T,
+        untranslatedNameFemale = "Звездная серферша /* Капитанский класс женщины-капитана*/"%_T,
         description = "Этому капитану нужна скорость, бешеная скорость. /* sentence referring to a male captain */"%_t,
         descriptionFemale = "Этому капитану нужна скорость, бешеная скорость. /* sentence referring to a female captain */"%_t,
 
@@ -142,10 +142,10 @@ function CaptainUtility.ClassProperties() --Create new function in its place
     }
     properties[CaptainUtility.ClassType.LootGoblin] =
     {
-        displayName = "Лут Гоблин /* Captain Class of a male captain */"%_t,
-        displayNameFemale = "Лут Гоблин /* Captain Class of a female captain*/"%_t,
-        untranslatedName = "Loot Goblin /* Captain Class of a male captain */"%_T,
-        untranslatedNameFemale = "Loot Goblin /* Captain Class of a female captain*/"%_T,
+        displayName = "Лут Гоблин /* Капитанский класс мужчины-капитана */"%_t,
+        displayNameFemale = "Лут Гоблин /* Капитанский класс женщины-капитана*/"%_t,
+        untranslatedName = "Лут Гоблин /* Капитанский класс мужчины-капитана */"%_T,
+        untranslatedNameFemale = "Лут Гоблинша /* Капитанский класс женщины-капитана*/"%_T,
         description = "Жадность этого капитана не знает границ, он позаботился о том, чтобы получить свою добычу и иметь место для ее хранения. /* sentence referring to a male captain */"%_t,
         descriptionFemale = "Жадность этого капитана не знает границ, она позаботилась о том, чтобы получить свою добычу и иметь место для ее хранения. /* sentence referring to a female captain */"%_t,
 
