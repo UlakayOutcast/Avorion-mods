@@ -12,8 +12,8 @@ lines_.announcement = {
 	system_remove = 2.0,
 	buildmode_change = 4.0,
 	enemy_defeated = 2.0,
-	changed_relations = 3.0,
-	changed_relations_level = 3.0,
+	changed_relations = 2.8,
+	changed_relations_level = 2.8,
 	new_material = 3.0,
 } 
 lines_.warning = {
@@ -21,7 +21,7 @@ lines_.warning = {
 	threat_detected = 4.0,
 	hostile_ships = 4.0,
 	ship_lost = 2.0,
-	threat_level = 1.5,
+	threat_level = 1.4,
 } 
 lines_.misc = {
 	extremely_high = 3.0,

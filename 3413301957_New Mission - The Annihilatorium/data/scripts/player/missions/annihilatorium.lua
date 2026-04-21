@@ -25,7 +25,7 @@ local Placer = include("placer")
 mission._Debug = 0
 mission._Spawn_Boss_Debug = 0
 
-mission._Name = "The Annihilatorium"
+mission._Name = "Аннигиляторий"
 
 --region #INIT
 
@@ -1170,7 +1170,7 @@ mission.makeBulletin = function(_Station)
 
     local _Difficulty = "Difficult"
     if _DangerLevel >= 5 then
-        _Difficulty = "Extreme"
+        _Difficulty = "Экстремальный"
     end
     if _DangerLevel == 10 then
         _Difficulty = "Death Sentence"
@@ -1209,7 +1209,7 @@ mission.makeBulletin = function(_Station)
         reward = "¢${reward}",
         script = "missions/annihilatorium.lua",
         formatArguments = { _X = target.x, _Y = target.y, reward = createMonetaryString(reward)},
-        msg = "Step right up! Come on down to \\s(%1%:%2%)!",
+        msg = "Подойди поближе! Спускайся к \\s(%1%:%2%)!",
         giverTitle = _Station.title,
         giverTitleArgs = _Station:getTitleArguments(),
         checkAccept = [[
