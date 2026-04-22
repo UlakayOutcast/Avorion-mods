@@ -30,15 +30,17 @@ function MaximumSpeedNormalization.applySpeedCap()
 		-- local speedMultiplier = 51.55 / math.sqrt(mass) + 0.3  -- вычесляем влияние массы на скорость (48.85=930m/s on 1x1x1 engine, что в 10 раз больше стандарта)
 		-- local speedMultiplier = 16236.2 / math.sqrt(mass) + 0.3  -- вычесляем влияние массы на скорость (16236.2=299782m/s on 1x1x1 engine) 299792458 m/s light speed
 		-- local speedMultiplier = 160.8 / math.sqrt(mass) + 0.3  -- вычесляем влияние массы на скорость (160.8=2997m/s on 1x1x1 engine)
-		-- local speedMultiplier = 117.65 / math.sqrt(mass) + 8.845
-		local speedMultiplier = 11.74 / math.sqrt(mass) + 0.88
+		-- local speedMultiplier = 11.15 / math.sqrt(mass) + 1 -- 1x1x1
+		-- local speedMultiplier = 13.65 / math.sqrt(mass) + 0.5 -- 1x1x1 to 2x2x2
+		-- local speedMultiplier = 14.28 / math.sqrt(mass) + 0.381 -- 1x1x1 to 12.5x12.5x12.5
+		local speedMultiplier = 14.15 / math.sqrt(mass) + 0.405 -- 1x1x1 to 10x10x10
 		ship:addKeyedMultiplier(StatsBonuses.Velocity, "SpeedCap", speedMultiplier) -- применяем множитель
 		
 		-- local speedMultiplier = 160.8 / math.sqrt(mass) + 0.3 
 		-- ship:addAbsoluteBias(StatsBonuses.Velocity, 1)
 		
 		-- ускорение
-		-- local accelerationMultiplier = 1 - math.sqrt(mass) / 100 + 0.666  -- вычесляем влияние массы на ускорение
+		-- local accelerationMultiplier = 1 - math.sqrt(mass) / 100 + 0.333  -- вычесляем влияние массы на ускорение
 		-- ship:addKeyedMultiplier(StatsBonuses.Acceleration, "AccelerationCap", accelerationMultiplier) -- применяем 
 		
 		-- вращение
