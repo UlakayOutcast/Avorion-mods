@@ -32,8 +32,7 @@ function MaximumSpeedNormalization.applySpeedCap()
 		-- local speedMultiplier = 160.8 / math.sqrt(mass) + 0.3  -- вычесляем влияние массы на скорость (160.8=2997m/s on 1x1x1 engine)
 		-- local speedMultiplier = 11.15 / math.sqrt(mass) + 1 -- 1x1x1
 		-- local speedMultiplier = 13.65 / math.sqrt(mass) + 0.5 -- 1x1x1 to 2x2x2
-		-- local speedMultiplier = 14.28 / math.sqrt(mass) + 0.381 -- 1x1x1 to 12.5x12.5x12.5
-		local speedMultiplier = 14.15 / math.sqrt(mass) + 0.405 -- 1x1x1 to 10x10x10
+		local speedMultiplier = 32.1 / math.sqrt(mass) + 0.856 -- 1x1x1 to 12.5x12.5x12.5 - 672 - iron
 		ship:addKeyedMultiplier(StatsBonuses.Velocity, "SpeedCap", speedMultiplier) -- применяем множитель
 		
 		-- local speedMultiplier = 160.8 / math.sqrt(mass) + 0.3 
