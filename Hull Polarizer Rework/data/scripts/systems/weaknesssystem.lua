@@ -99,7 +99,11 @@ end
 function getEnergy(seed, rarity, permanent)
     local weaknessType, hpBonus, dmgFactor = getBonuses(seed, rarity, true)
     -- return ((hpBonus + 1) ^ 4 - dmgFactor ^ 2) * 1000 * 537 
-    return (hpBonus * 6000 - dmgFactor * 2000) * 1000 * 537
+    if permanent then
+		return (hpBonus * 6000 - dmgFactor * 2000) * 1000 * 537
+		else
+		return 0
+	end
 end
 
 function getPrice(seed, rarity)
