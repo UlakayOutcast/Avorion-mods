@@ -21,7 +21,7 @@ lines_.warning = {
 	threat_detected = 4.0,
 	hostile_ships = 4.0,
 	ship_lost = 2.0,
-	threat_level = 1.4,
+	threat_level = 1.3,
 } 
 lines_.misc = {
 	extremely_high = 3.0,
